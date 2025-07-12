@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Documentation</title>
+    <style>
+        :root {
+            --primary-red: #ff3333;
+            --dark-bg: #121212;
+            --darker-bg: #0a0a0a;
+            --content-bg: #1e1e1e;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 40px;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 50px;
+        }
+        
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .tesla-logo {
+            height: 464px;
+            width: 464px;
+            object-fit: contain;
+            margin-right: 50px;
+            filter: drop-shadow(0 0 10px rgba(255, 50, 50, 0.3));
+        }
+        
+        .description-container {
+            flex: 1;
+            max-width: 800px; /* Increased from 600px to 800px */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .description {
+            background-color: var(--content-bg);
+            padding: 40px; /* Increased padding */
+            border-radius: 8px;
+            line-height: 1.6;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            width: 100%; /* Full width of container */
+            max-width: 800px; /* Matches container width */
+            text-align: left; /* left text */
+        }
+        
+        h1 {
+            color: var(--primary-red);
+            margin: 0 0 20px 0;
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px rgba(255, 50, 50, 0.3);
+        }
+        
+        .download-section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .download-btn {
+            background-color: var(--primary-red);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 50, 50, 0.4);
+        }
+        
+        .download-btn:hover {
+            background-color: #ff0000;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 50, 50, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="header-content">
+            <div class="description-container">
+                <div class="description">
+                    <h1>About this project</h1>
+                    <p>The project combines traditional computer vision techniques with deep learning to create an AI mini-autopilot, focusing on lane detection and turn prediction from dashcam videos.</p>
+                    <p>Learners gain hands-on experience in computer vision and deep learning for autonomous driving, enabling them to build systems that process visual data to make real-time navigational decisions.</p>
+                    <p>This project involves developing an AI for self-driving cars using Convolutional Neural Networks (CNNs) to predict turn directions in real-time based on dashcam footage.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="download-section">
+            <a href="COMP2211_PA2_Mini_AutoPilot.ipynb" download class="download-btn">Download Jupyter Notebook</a>
+        </div>
+    </div>
+</body>
+</html>
